@@ -106,10 +106,43 @@
                         <Embed-Dependency>*;scope=compile|runtime;inline=false</Embed-Dependency>
                         <Embed-Transitive>true</Embed-Transitive>
                         <DynamicImport-Package>
-                            org.apache.tools.ant ,
+                            org.objectweb.asm.util,
+                            sun.awt,
+                            sun.java2d.pipe,
+                            org.fusesource.jansi,
+                            com.thoughtworks.qdox,
+                            com.thoughtworks.xstream,
+                            groovyjarjarasm.asm.tree.analysis,
+                            jline,
+                            junit.framework,
+                            junit.textui,
+                            org.apache.bsf,
+                            org.apache.bsf.util,
+                            org.apache.commons.cli,
+                            org.apache.ivy,
+                            org.apache.ivy.core.cache,
+                            org.apache.ivy.core.event,
+                            org.apache.ivy.core.event.download,
+                            org.apache.ivy.core.event.resolve,
+                            org.apache.ivy.core.module.descriptor,
+                            org.apache.ivy.core.module.id,
+                            org.apache.ivy.core.report,
+                            org.apache.ivy.core.resolve,
+                            org.apache.ivy.core.settings,
+                            org.apache.ivy.plugins.matcher,
+                            org.apache.ivy.plugins.resolver,
+                            org.apache.ivy.util,
+                            org.apache.tools.ant,
+                            org.apache.tools.ant.dispatch,
+                            org.apache.tools.ant.helper,
+                            org.apache.tools.ant.taskdefs,
                             org.apache.tools.ant.types,
-                            org.objectweb.asm.util
+                            org.apache.tools.ant.util,
+                            org.junit
                         </DynamicImport-Package>
+                        <Export-Package>
+                            com.test.vivek.*
+                        </Export-Package>
                     </instructions>
                 </configuration>
             </plugin>

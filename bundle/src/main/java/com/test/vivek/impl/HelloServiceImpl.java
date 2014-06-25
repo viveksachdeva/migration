@@ -10,7 +10,7 @@ import org.apache.sling.jcr.api.SlingRepository;
 import com.test.vivek.HelloService;
 
 /**
- * One implementation of the {@link HelloService}. Note that
+ * One implementation of the {@link com.test.vivek.HelloService}. Note that
  * the repository is injected, not retrieved.
  */
 @Service
