@@ -1,10 +1,8 @@
 package com.test.vivek.servlet
 
-import com.test.vivek.componentmodel.*
-import groovy.transform.CompileStatic
-import groovy.util.logging.Slf4j
+import com.test.vivek.model.*
 import org.apache.felix.scr.annotations.Component
-import org.apache.felix.scr.annotations.Property
+import org.apache.felix.scr.annotations.Service
 import org.apache.felix.scr.annotations.sling.SlingServlet
 import org.apache.sling.api.SlingHttpServletRequest
 import org.apache.sling.api.SlingHttpServletResponse
@@ -17,13 +15,12 @@ import org.slf4j.LoggerFactory
 import javax.jcr.Session
 
 @SlingServlet(
-        paths=["/bin/jcrtest"]
+        paths= ["/bin/migrate" ],
+        methods=[ "GET" ]
 )
-@org.apache.felix.scr.annotations.Properties([
-@Property(name = "service.vendor", value = "Time Warner Cable"),
-@Property(name = "service.description", value = "JCR Repositories Test Servlet")
-])
-class IGBlogMigrationServlet extends SlingAllMethodsServlet {
+@Service
+@Component
+class IGBlogMigrationServlet extends SlingAllMethodsServlet{
     private static final Logger LOGGER = LoggerFactory.getLogger(IGBlogMigrationServlet.class);
 
     @org.apache.felix.scr.annotations.Reference

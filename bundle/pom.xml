@@ -7,7 +7,7 @@
     <!-- ====================================================================== -->
     <parent>
         <groupId>com.test.vivek</groupId>
-        <artifactId>VivelProject</artifactId>
+        <artifactId>VivekProject</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
 
@@ -15,7 +15,7 @@
     <!-- P R O J E C T D E S C R I P T I O N -->
     <!-- ====================================================================== -->
 
-    <artifactId>VivelProject-bundle</artifactId>
+    <artifactId>VivekProject-bundle</artifactId>
     <packaging>bundle</packaging>
     <name>VivekProject Bundle</name>
 
@@ -102,17 +102,17 @@
                 <extensions>true</extensions>
                 <configuration>
                     <instructions>
-                        <Bundle-SymbolicName>com.test.vivek.VivelProject-bundle</Bundle-SymbolicName>
+                        <Bundle-SymbolicName>com.test.vivek.model.VivekProject-bundle</Bundle-SymbolicName>
                         <Embed-Dependency>*;scope=compile|runtime;inline=false</Embed-Dependency>
                         <Embed-Transitive>true</Embed-Transitive>
                         <DynamicImport-Package>
+                            groovyjarjarasm.asm.tree.analysis,
                             org.objectweb.asm.util,
                             sun.awt,
                             sun.java2d.pipe,
                             org.fusesource.jansi,
                             com.thoughtworks.qdox,
                             com.thoughtworks.xstream,
-                            groovyjarjarasm.asm.tree.analysis,
                             jline,
                             junit.framework,
                             junit.textui,
@@ -140,9 +140,6 @@
                             org.apache.tools.ant.util,
                             org.junit
                         </DynamicImport-Package>
-                        <Export-Package>
-                            com.test.vivek.*
-                        </Export-Package>
                     </instructions>
                 </configuration>
             </plugin>

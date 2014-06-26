@@ -1,4 +1,4 @@
-package com.test.vivek.componentmodel
+package com.test.vivek.model
 
 import org.jcrom.annotations.JcrChildNode
 import org.jcrom.annotations.JcrName
@@ -10,10 +10,6 @@ class BlogComponentModel {
     @JcrPath String path;
     @JcrProperty(name="sling:resourceType") String resourceType = "test/migration/blog";
     @JcrChildNode TextFieldComponentModel textcomp
-    @JcrChildNode com.test.vivek.componentmodel.TitleComponentModel title
-
-    public static void main(String[] args){
-        println("::::::::::::::::::::::::sdaaaaaaaaaaaaaaaaa:")
-    }
+    @JcrChildNode TitleComponentModel title
 
 }

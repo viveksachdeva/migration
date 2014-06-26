@@ -1,4 +1,4 @@
-package com.test.vivek.componentmodel
+package com.test.vivek.model
 
 import org.jcrom.annotations.JcrName
 import org.jcrom.annotations.JcrPath
