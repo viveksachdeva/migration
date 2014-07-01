@@ -9,7 +9,7 @@ class BlogComponentModel {
     @JcrName String name;
     @JcrPath String path;
     @JcrProperty(name="sling:resourceType") String resourceType = "test/migration/blog";
-    @JcrChildNode TextFieldComponentModel textcomp
-    @JcrChildNode TitleComponentModel title
+    @JcrChildNode(createContainerNode=false) TextFieldComponentModel textcomp
+    @JcrChildNode(createContainerNode=false) TitleComponentModel title
 
 }

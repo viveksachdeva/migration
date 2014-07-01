@@ -91,6 +91,9 @@
             <plugin>
                 <groupId>org.apache.felix</groupId>
                 <artifactId>maven-scr-plugin</artifactId>
+                 <configuration>
+                     <scanClasses>true</scanClasses>
+                 </configuration>
                 <executions>
                     <execution>
                         <id>generate-scr-descriptor</id>
@@ -110,6 +113,8 @@
                         <Embed-Dependency>*;scope=compile|runtime;inline=false</Embed-Dependency>
                         <Embed-Transitive>true</Embed-Transitive>
                         <DynamicImport-Package>
+                            org.apache.avalon.framework.logger,
+                            org.apache.log,
                             groovyjarjarasm.asm.tree.analysis,
                             org.objectweb.asm.util,
                             sun.awt,

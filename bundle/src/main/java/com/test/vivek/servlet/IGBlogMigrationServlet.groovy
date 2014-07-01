@@ -16,7 +16,8 @@ import javax.jcr.Session
 
 @SlingServlet(
         paths= ["/bin/migrate" ],
-        methods=[ "GET" ]
+        methods=[ "GET" ],
+        generateComponent = false
 )
 @Service
 @Component
@@ -32,10 +33,9 @@ class IGBlogMigrationServlet extends SlingAllMethodsServlet{
         response.setContentType("application/json");
         Jcrom jcrom = new Jcrom();
         def rawFeed = new URL("http://www.intelligrape.com/blog/author/vivek.sachdeva/feed").text
-        LOGGER.info("--------------raw feed------${rawFeed}")
         try {
-            javax.jcr.Node parentNode = session.getRootNode();
             session = repository.loginAdministrative(null);
+            javax.jcr.Node parentNode = session.getRootNode();
             jcrom.map(BlogComponentModel.class)
             def records = new XmlParser().parseText(rawFeed)?.channel?.item
             records.each {
@@ -46,13 +46,13 @@ class IGBlogMigrationServlet extends SlingAllMethodsServlet{
                 BlogComponentModel blogComponentModel = new BlogComponentModel(name: "blog", textcomp: textFieldComponentModel, title: titleComponentModel)
                 jcrom.addNode(parentNode, blogComponentModel);
             }
-            session.save();
+            session?.save();
         } catch (Exception exc) {
             exc.printStackTrace(System.out);
         } finally {
-            session.logout();
+            session?.logout();
         }
-        response.getWriter().write("Compleytye ");
+        response.getWriter().write("Completed ");
 
     }
 }
