@@ -7,7 +7,7 @@
     <!-- ====================================================================== -->
     <parent>
         <groupId>com.test.vivek</groupId>
-        <artifactId>VivelProject</artifactId>
+        <artifactId>VivekProject</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
 
@@ -15,14 +15,14 @@
     <!-- P R O J E C T D E S C R I P T I O N -->
     <!-- ====================================================================== -->
 
-    <artifactId>VivelProject-content</artifactId>
+    <artifactId>VivekProject-content</artifactId>
     <packaging>content-package</packaging>
     <name>VivekProject Package</name>
 
     <dependencies>
         <dependency>
             <groupId>${project.groupId}</groupId>
-            <artifactId>VivelProject-bundle</artifactId>
+            <artifactId>VivekProject-bundle</artifactId>
             <version>${project.version}</version>
         </dependency>
     </dependencies>
@@ -57,8 +57,8 @@
                     <embeddeds>
                         <embedded>
                             <groupId>${project.groupId}</groupId>
-                            <artifactId>VivelProject-bundle</artifactId>
-                            <target>/apps/vivtest/install</target>
+                            <artifactId>VivekProject-bundle</artifactId>
+                            <target>/apps/migration/install</target>
                         </embedded>
                     </embeddeds>
                     <targetURL>http://${crx.host}:${crx.port}/crx/packmgr/service.jsp</targetURL>

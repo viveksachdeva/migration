@@ -38,12 +38,17 @@ class IGBlogMigrationServlet extends SlingAllMethodsServlet{
             javax.jcr.Node parentNode = session.getRootNode();
             jcrom.map(BlogComponentModel.class)
             def records = new XmlParser().parseText(rawFeed)?.channel?.item
+
+            def content = "content:encoded"
             records.each {
                 String blogTitle = it?.title?.text()
                 String blogDescription = it?.description?.text()
-                TextFieldComponentModel textFieldComponentModel = new TextFieldComponentModel(text: blogDescription)
-                TitleComponentModel titleComponentModel = new TitleComponentModel(text: blogTitle)
-                BlogComponentModel blogComponentModel = new BlogComponentModel(name: "blog", textcomp: textFieldComponentModel, title: titleComponentModel)
+
+                String content1 = it?.attribute(content).text()
+                TextFieldComponentModel textFieldComponentModel = new TextFieldComponentModel(name:"textcomp",text: blogDescription)
+                TextFieldComponentModel contentFieldComponentModel = new TextFieldComponentModel(name:"content",text: content1)
+                TitleComponentModel titleComponentModel = new TitleComponentModel(title: blogTitle)
+                BlogComponentModel blogComponentModel = new BlogComponentModel(name: "blog", textcomp: textFieldComponentModel,content :contentFieldComponentModel, title: titleComponentModel)
                 jcrom.addNode(parentNode, blogComponentModel);
             }
             session?.save();
@@ -52,7 +57,7 @@ class IGBlogMigrationServlet extends SlingAllMethodsServlet{
         } finally {
             session?.logout();
         }
-        response.getWriter().write("Completed ");
+        response.getWriter().write("records" + records + "Completed ");
 
     }
 }

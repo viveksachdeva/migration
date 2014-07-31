@@ -5,8 +5,8 @@ import org.jcrom.annotations.JcrPath
 import org.jcrom.annotations.JcrProperty
 
 class TitleComponentModel {
-    @JcrName String name = "title"
+    @JcrName String name
     @JcrPath String path;
     @JcrProperty(name="sling:resourceType") String resourceType = "foundation/components/title";
-    @JcrProperty String text
+    @JcrProperty String title
 }

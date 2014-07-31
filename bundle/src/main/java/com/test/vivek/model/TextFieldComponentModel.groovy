@@ -5,7 +5,7 @@ import org.jcrom.annotations.JcrPath
 import org.jcrom.annotations.JcrProperty
 
 class TextFieldComponentModel {
-    @JcrName String name = "textcomp"
+    @JcrName String name
     @JcrPath String path;
     @JcrProperty(name="sling:resourceType") String resourceType = "foundation/components/text";
     @JcrProperty String text

@@ -14,7 +14,7 @@
     <description>Maven Multimodule project for Migration.</description>
 
     <prerequisites>
-        <maven>3.0.2</maven>
+        <maven>3.1.1</maven>
     </prerequisites>
 
     <!-- ====================================================================== -->
