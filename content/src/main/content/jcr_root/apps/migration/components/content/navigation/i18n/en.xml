@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0"
+    jcr:language="en"
+    jcr:mixinTypes="[mix:language]"
+    jcr:primaryType="sling:Folder">
+    <description_depth
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="i18n-depth-description"
+        sling:message="Leave blank / or enter 0 if you want to list only immediate children and -1 if the entire navigation structure is required"/>
+    <description_startpath
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="i18n-startpath-description"
+        sling:message="Leave empty to use current page"/>
+    <label_depth
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="i18n-depth-label"
+        sling:message="Depth"/>
+    <label_displayas
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="i18n-displayas-label"
+        sling:message="Display As"/>
+    <label_horizontal
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="i18n-horizontallist-text"
+        sling:message="Horizontal List"/>
+    <label_startpath
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="i18n-startpath-label"
+        sling:message="Start Path"/>
+    <label_vertical
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="i18n-verticallist-text"
+        sling:message="Vertical List"/>
+    <sublabel_depth
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="i18n-depth-sublabel"
+        sling:message="The depth of the navigation structure"/>
+    <sublabel_startpath
+        jcr:primaryType="sling:MessageEntry"
+        sling:key="i18n-startpath-sublabel"
+        sling:message="The path from where navigation will be generated"/>
+</jcr:root>

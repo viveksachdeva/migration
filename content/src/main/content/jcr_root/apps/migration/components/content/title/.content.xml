@@ -3,7 +3,7 @@
     cq:isContainer="{Boolean}false"
     jcr:description="Title component which allows for BLANK values"
     jcr:primaryType="cq:Component"
-    jcr:title="BLOG Migration"
+    jcr:title="Title [ABC Financial Services]"
     sling:resourceSuperType="foundation/components/parbase"
     allowedParents="[*/parsys]"
-    componentGroup="Migration"/>
+    componentGroup="ABC Financial Services"/>

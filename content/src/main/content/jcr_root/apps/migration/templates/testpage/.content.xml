@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0"
-    jcr:description="Blog page template"
+    jcr:description="test page template: empty 1-column parsys that allows dropping components into it"
     jcr:mixinTypes="[mix:lockable]"
     jcr:primaryType="cq:Template"
-    jcr:title="Blog "
+    jcr:title="TEST Residential with parsys"
     allowedPaths="[/content(/.*)?]"
-    ranking="{Long}2">
+    ranking="{Long}1000">
     <jcr:content
-        cq:designPath="/etc/designs/geometrixx-media"
         jcr:primaryType="cq:PageContent"
-        sling:resourceType="migration/components/page/blogPage"/>
+        sling:resourceType="migration/components/page/testpage"/>
 </jcr:root>

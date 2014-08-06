@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Navigation Component"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <tab1
+                jcr:primaryType="cq:Panel"
+                title="Navigation Component">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <depth
+                        jcr:primaryType="cq:Widget"
+                        allowDecimals="{Boolean}false"
+                        fieldDescription="i18n-depth-description"
+                        fieldLabel="i18n-depth-label"
+                        fieldSubLabel="i18n-depth-sublabel"
+                        name="./depth"
+                        xtype="numberfield"/>
+                    <displayAs
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="i18n-displayas-label"
+                        name="./displayAs"
+                        type="combobox"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <horizontal
+                                jcr:primaryType="nt:unstructured"
+                                text="i18n-horizontallist-text"
+                                value="horizontal"/>
+                            <vertical
+                                jcr:primaryType="nt:unstructured"
+                                text="i18n-verticallist-text"
+                                value="vertical"/>
+                        </options>
+                    </displayAs>
+                    <startPath
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="i18n-startpath-description"
+                        fieldLabel="i18n-startpath-label"
+                        fieldSubLabel="i18n-startpath-sublabel"
+                        name="./startPath"
+                        rootPath="/content/migration"
+                        xtype="pathfield"/>
+                </items>
+            </tab1>
+        </items>
+    </items>
+</jcr:root>
