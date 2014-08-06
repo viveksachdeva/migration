@@ -3,5 +3,5 @@
     cq:isContainer="{Boolean}false"
     jcr:description="Logo component extended from foundation"
     jcr:primaryType="cq:Component"
-    jcr:title="Logo [ABC Financial Services]"
+    jcr:title="Logo [Migration]"
     componentGroup=".hidden"/>

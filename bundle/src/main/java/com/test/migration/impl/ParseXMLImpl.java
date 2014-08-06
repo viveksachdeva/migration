@@ -1,9 +1,9 @@
-package com.test.vivek.impl;
+package com.test.migration.impl;
 
-import com.test.vivek.ParseXML;
-import com.test.vivek.model.BlogComponentModel;
-import com.test.vivek.model.TextFieldComponentModel;
-import com.test.vivek.model.TitleComponentModel;
+import com.test.migration.ParseXML;
+import com.test.migration.model.BlogComponentModel;
+import com.test.migration.model.TextFieldComponentModel;
+import com.test.migration.model.TitleComponentModel;
 import org.apache.felix.scr.annotations.Component;
 import org.apache.felix.scr.annotations.Reference;
 import org.apache.felix.scr.annotations.Service;

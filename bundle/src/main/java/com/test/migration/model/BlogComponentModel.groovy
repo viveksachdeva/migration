@@ -1,4 +1,4 @@
-package com.test.vivek.model
+package com.test.migration.model
 
 import org.jcrom.annotations.JcrChildNode
 import org.jcrom.annotations.JcrName

@@ -1,6 +1,6 @@
-package com.test.vivek.servlet
+package com.test.migration.servlet
 
-import com.test.vivek.model.*
+import com.test.migration.model.*
 import org.apache.felix.scr.annotations.Component
 import org.apache.felix.scr.annotations.Service
 import org.apache.felix.scr.annotations.sling.SlingServlet

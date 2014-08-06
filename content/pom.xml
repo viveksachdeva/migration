@@ -6,8 +6,8 @@
     <!-- P A R E N T P R O J E C T D E S C R I P T I O N -->
     <!-- ====================================================================== -->
     <parent>
-        <groupId>com.test.vivek</groupId>
-        <artifactId>VivekProject</artifactId>
+        <groupId>com.test.migration</groupId>
+        <artifactId>MigrationProject</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
 
@@ -15,14 +15,14 @@
     <!-- P R O J E C T D E S C R I P T I O N -->
     <!-- ====================================================================== -->
 
-    <artifactId>VivekProject-content</artifactId>
+    <artifactId>MigrationProject-content</artifactId>
     <packaging>content-package</packaging>
-    <name>VivekProject Package</name>
+    <name>MigrationProject Package</name>
 
     <dependencies>
         <dependency>
             <groupId>${project.groupId}</groupId>
-            <artifactId>VivekProject-bundle</artifactId>
+            <artifactId>MigrationProject-bundle</artifactId>
             <version>${project.version}</version>
         </dependency>
     </dependencies>
@@ -57,7 +57,7 @@
                     <embeddeds>
                         <embedded>
                             <groupId>${project.groupId}</groupId>
-                            <artifactId>VivekProject-bundle</artifactId>
+                            <artifactId>MigrationProject-bundle</artifactId>
                             <target>/apps/migration/install</target>
                         </embedded>
                     </embeddeds>

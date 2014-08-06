@@ -1,6 +1,6 @@
-package com.test.vivek.servlet;
+package com.test.migration.servlet;
 
-import com.test.vivek.ParseXML;
+import com.test.migration.ParseXML;
 import org.apache.felix.scr.annotations.Reference;
 import org.apache.felix.scr.annotations.sling.SlingServlet;
 import org.apache.http.HttpResponse;

@@ -6,8 +6,8 @@
     <!-- P A R E N T P R O J E C T D E S C R I P T I O N -->
     <!-- ====================================================================== -->
     <parent>
-        <groupId>com.test.vivek</groupId>
-        <artifactId>VivekProject</artifactId>
+        <groupId>com.test.migration</groupId>
+        <artifactId>MigrationProject</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
 
@@ -15,9 +15,9 @@
     <!-- P R O J E C T D E S C R I P T I O N -->
     <!-- ====================================================================== -->
 
-    <artifactId>VivekProject-bundle</artifactId>
+    <artifactId>MigrationProject-bundle</artifactId>
     <packaging>bundle</packaging>
-    <name>VivekProject Bundle</name>
+    <name>MigrationProject Bundle</name>
 
     <dependencies>
         <!--<dependency>-->
@@ -109,7 +109,7 @@
                 <extensions>true</extensions>
                 <configuration>
                     <instructions>
-                        <Bundle-SymbolicName>com.test.vivek.model.VivekProject-bundle</Bundle-SymbolicName>
+                        <Bundle-SymbolicName>com.test.migration.model.MigrationProject-bundle</Bundle-SymbolicName>
                         <Embed-Dependency>*;scope=compile|runtime;inline=false</Embed-Dependency>
                         <Embed-Transitive>true</Embed-Transitive>
                         <DynamicImport-Package>

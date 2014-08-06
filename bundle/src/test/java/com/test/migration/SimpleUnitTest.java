@@ -1,4 +1,4 @@
-package com.test.vivek;
+package com.test.migration;
 
 import static org.junit.Assert.*;
 
